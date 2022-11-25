@@ -15,26 +15,24 @@ import { MedicosComponent } from './pages/medicos/medicos.component';
 import { EspecialidadesComponent } from './pages/especialidades/especialidades.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
 
-
-
-const routes: Routes = [  
-  {path: "home", component:HomeComponent},
-  {path: "valoracion", component:ValoracionComponent},
-  {path: "especialistas", component:NuestrosEspecialistasComponent},
-  {path: "login", component:LoginComponent},
-  {path: "registrar", component:RegistrarComponent},
-  {path: "perfilUsuario", component:PerfilUsuarioComponent},
-  {path: "perfilAdmin", component:PerfilAdministradorComponent},
-  {path: "agenda", component:AgendaComponent},
-  {path: "tratamientos", component:TratamientosComponent},
-  {path: "medicos", component:MedicosComponent},
-  {path: "especialidades", component:EspecialidadesComponent},
-  {path: "usuario", component:UsuarioComponent},
-  {path:  '**', redirectTo: '/home', pathMatch: 'full'},
+const routes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'valoracion', component: ValoracionComponent },
+  { path: 'especialistas', component: NuestrosEspecialistasComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'registrar', component: RegistrarComponent },
+  { path: 'perfilUsuario', component: PerfilUsuarioComponent },
+  { path: 'perfilAdmin', component: PerfilAdministradorComponent },
+  { path: 'agenda', component: AgendaComponent },
+  { path: 'tratamientos', component: TratamientosComponent },
+  { path: 'medicos', component: MedicosComponent },
+  { path: 'especialidades', component: EspecialidadesComponent },
+  { path: 'usuario', component: UsuarioComponent },
+  { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -1,13 +1,14 @@
 import {Medico} from '../modelo/medico';
 import {Servicios} from '../modelo/servicios';
+
 export interface Cita{
-    id?:'',
-    cedula:'',
-    correo:'',
-    fechaInicio:'',
-    fechaFin:'',
+    id?:string,
+    cedula:string,
+    correo:string,
+    fechaInicio: string,
+    fechaFin: string,
     medico : Medico,
     servicio : Servicios,
-    usuario:'',
-    eventoAgendaId:'',
+    usuario:string,
+    eventoAgendaId:string,
 }

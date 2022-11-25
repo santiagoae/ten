@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpClientModule} from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class DoctoresService {
 
-  private API_SERVER = "http://localhost:8080/doctores/"
+  private service = 'doctores';
+  private API_SERVER = `${environment.api}/${this.service}`;
 
   constructor(
     private httpClient : HttpClient
@@ -17,7 +19,8 @@ export class DoctoresService {
   }
 
   public getAllDoctoresByEspecialidad(idEspecialidad): Observable<any>{
-    return this.httpClient.get(this.API_SERVER+idEspecialidad)
+    
+    return this.httpClient.get(`${this.API_SERVER}/${idEspecialidad}`);
   }
 
   public saveDoctores(medico: any): Observable<any> {

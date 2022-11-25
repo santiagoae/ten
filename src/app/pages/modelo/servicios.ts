@@ -1,4 +1,4 @@
 export interface Servicios{
-    id?:'',
-    tipoServicio:'',
+    id?: string,
+    tipoServicio:string
 }

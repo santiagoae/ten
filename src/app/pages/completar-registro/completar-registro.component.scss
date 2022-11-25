@@ -1,0 +1,26 @@
+
+
+@media (min-width: 1024px) {
+    .contenedorCompletar{
+        width: 100%;
+        min-height:60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorCompletar form{
+        width: 40%;
+        min-height:60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .contenedorCompletar form h1{
+        font-size: 24px;
+        text-align: center;
+    }
+}

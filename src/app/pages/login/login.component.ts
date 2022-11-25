@@ -1,4 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ComoLlegarComponent } from 'src/app/components/como-llegar/como-llegar.component';
 
 declare var google:any;
@@ -10,7 +12,10 @@ declare var google:any;
 })
 export class LoginComponent implements  OnInit, AfterViewInit {
 
-  constructor() { }
+  formLogin : FormGroup;
+
+  constructor(private fb: FormBuilder,
+              private route: Router) { }
 
   ngAfterViewInit(): void {
     google.accounts.id.initialize({
@@ -48,13 +53,31 @@ export class LoginComponent implements  OnInit, AfterViewInit {
       if (correoToken == "yessica_piedrahita82181@elpoli.edu.co") {
         document.location.href = "/perfilAdmin";
       }else{
-        document.location.href = "/perfilUsuario";
+        document.location.href = "/completarRegistro";
       }
       
     }
   }
 
   ngOnInit(): void {
+    this.crearForm();
+  }
+
+  crearForm(){
+    this.formLogin = this.fb.group({
+      usuario: ["", Validators.required],
+      contrasena: ["", Validators.required],
+    })
+  }
+
+  submit(){
+    let valoresForm = this.formLogin.value;
+    console.log(valoresForm.usuario);
+    if (valoresForm.usuario == "yessica_piedrahita82181@elpoli.edu.co") {
+      this.route.navigate(['perfilAdmin']);
+    }else{
+      this.route.navigate(['completarRegistro']);
+    }
     
   }
 

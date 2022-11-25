@@ -7,7 +7,6 @@ import { MostrarBotonService } from './../../servicios/mostrar-boton.service';
 import { ServiciosService } from './../../servicios/servicios.service';
 import { AgendaService } from './services/agenda.service';
 
-import * as moment from 'moment';
 import { Medico } from '../modelo/medico';
 
 @Component({

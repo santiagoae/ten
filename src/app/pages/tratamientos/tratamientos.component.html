@@ -1,0 +1,47 @@
+<div class="contenedor-formulario" >
+  <form [formGroup]="tratamientosForm">
+  
+    <div class="form-group mb-2">
+      <label for="exampleInputEmail1">Ingrese la Cedula</label>
+      <input type="text" name="cedula" id="cedula" formControlName="cedula" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu Cedula">          
+    </div>
+    <button 
+    type="submit" class="btn btn-success"  (click)="getCitasByCedula(cita)" >Buscar</button>
+    </form> 
+    <div id="buttonDiv"></div>    
+</div>
+
+<div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>cedula</th>
+          <th>Correo</th>
+          <th>Fecha Inicio</th>
+          <th>Fecha Fin</th>
+          <th>Doctor</th>
+          <th>Servicio</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let item of cita">
+          <td>{{item.id}}</td>
+          <td>{{item.cedula}}</td>
+          <td>{{item.correo}}</td>
+          <td>{{item.fechaFin}}</td>
+          <td>{{item.fechaInicio}}</td>
+          <td>{{item.medico.nombre}}</td>
+          <td>{{item.servicio.tipoServicio}}</td>
+          <td>
+            <button type="button" class="btn btn-outline-danger" style="margin-right: 10px;" (click)="eliminar(item)" ><i class="fa-solid fa-user-slash"></i></button>
+            <button type="button" class="btn btn-outline-success " (click)="actualizarAgenda(item)"  ><i class="fa-regular fa-pen-to-square"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <section id="Footer" class="Secciones">
+    <app-footer></app-footer>
+  </section>

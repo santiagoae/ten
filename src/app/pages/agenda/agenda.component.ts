@@ -126,11 +126,11 @@ export class AgendaComponent implements OnInit {
     console.log('Esta es Fecha Fin ' + this.agendaForm.value.fechaFin);
     this.citasService.saveCitas(this.agendaForm.value).subscribe(
       (Response) => {
-        this.alert.open('Asignaste tu cita',"",{duration: 3000},);
+        this.alert.open('Asignaste tu cita',"cerrar",{duration: 3000},);
         window.location.reload();
       },
       (error) => {
-        this.alert.open(`Ocurrio un error inesperado: ${error}`,"",{duration: 3000},);
+        this.alert.open('Ocurrio un error inesperado:',"cerrar",{duration: 3000},);
       }
     );
   }

@@ -12,3 +12,23 @@
 .btn-logeo:hover{
     background-color: rgb(167, 191, 48);
 }
+
+@media (min-width: 1024px) {
+
+    .contenedor-formulario{
+        min-height: 70vh;
+    }
+    
+    .contenedor-formulario form{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+          
+    }
+
+    .contenedor-formulario form div{
+        width: 100%;   
+    }
+ }

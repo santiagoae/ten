@@ -81,4 +81,8 @@ export class LoginComponent implements  OnInit, AfterViewInit {
     
   }
 
+  registro(){
+    this.route.navigate(['registrar']);
+  }
+
 }

@@ -44,6 +44,22 @@ export class TratamientosComponent implements OnInit {
     });
   }
 
+  getCitasByCedula() {
+    let v3 = this.tratamientosForm.value;
+    console.log('esta es la cita ' + v3);
+    this.citasSrv.getCitasByCedula(v3).subscribe(
+      (Response) => {
+        //console.log(Response)
+        if (Response) {
+          this.cita = Response;
+        }
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
+  }
+
   getCitas() {
     this.citasSrv.getAllCitas().subscribe(
       (Response) => {
@@ -75,19 +91,4 @@ export class TratamientosComponent implements OnInit {
     this.router.navigate(['agenda']);
   }
 
-  getCitasByCedula(cita) {
-    let v3 = this.tratamientosForm.value;
-    console.log('esta es la cita ' + v3);
-    this.citasSrv.getCitasByCedula(cita).subscribe(
-      (Response) => {
-        //console.log(Response)
-        if (Response) {
-          window.location.reload();
-        }
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
-  }
 }

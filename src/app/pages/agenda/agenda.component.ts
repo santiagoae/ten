@@ -107,9 +107,9 @@ export class AgendaComponent implements OnInit {
     });
 
     this.agendaForm = this.fb.group({
+      id: [''],
       nombre: [this.nombreUsuario],
       fechaInicio: ['', Validators.required],
-      fechaFin: ['', Validators.required],
       correo: [this.correo, Validators.required],
       medico: this.medicoForm,
       cedula: ['', Validators.required],
@@ -134,8 +134,7 @@ export class AgendaComponent implements OnInit {
 
   actualizar() {
     this.modeloCita = this.agendaForm.value;
-    let evento = String(localStorage.getItem('evento'));
-    this.citasService.updateCitas(evento, this.modeloCita).subscribe(
+    this.citasService.updateCitas(this.modeloCita.eventoAgendaId, this.modeloCita).subscribe(
       (Response) => {
         this.agendaForm.reset();
         if (Response) {

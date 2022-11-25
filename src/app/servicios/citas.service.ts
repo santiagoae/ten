@@ -30,11 +30,11 @@ export class CitasService {
     }
 
     public updateCitas(eventoAgendaId: string, cita: any): Observable<any> {
-      return this.httpClient.put(this.API_SERVER + eventoAgendaId, cita);
+      return this.httpClient.post(this.API_SERVER + eventoAgendaId, cita);
     }
 
     public getCitasByCedula(cita: any): Observable<any> {
-      return this.httpClient.post(this.API_SERVER, cita.cedula);
+      return this.httpClient.get(this.API_SERVER + cita.cedula);
     }
 
   }

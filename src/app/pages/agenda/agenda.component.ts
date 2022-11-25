@@ -6,6 +6,7 @@ import { DoctoresService } from './../../servicios/doctores.service';
 import { MostrarBotonService } from './../../servicios/mostrar-boton.service';
 import { ServiciosService } from './../../servicios/servicios.service';
 import { AgendaService } from './services/agenda.service';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 import { Medico } from '../modelo/medico';
 
@@ -52,7 +53,8 @@ export class AgendaComponent implements OnInit {
     public citasService: CitasService,
     public mostrarService: MostrarBotonService,
     private fb: FormBuilder,
-    private agendaSrv: AgendaService
+    private agendaSrv: AgendaService,
+    private alert: MatSnackBar,
   ) {}
 
   ngOnInit(): void {
@@ -124,10 +126,11 @@ export class AgendaComponent implements OnInit {
     console.log('Esta es Fecha Fin ' + this.agendaForm.value.fechaFin);
     this.citasService.saveCitas(this.agendaForm.value).subscribe(
       (Response) => {
+        this.alert.open('Asignaste tu cita',"",{duration: 3000},);
         window.location.reload();
       },
       (error) => {
-        console.error(error);
+        this.alert.open(`Ocurrio un error inesperado: ${error}`,"",{duration: 3000},);
       }
     );
   }

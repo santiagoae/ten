@@ -14,7 +14,7 @@ import { TratamientosComponent } from './pages/tratamientos/tratamientos.compone
 import { MedicosComponent } from './pages/medicos/medicos.component';
 import { EspecialidadesComponent } from './pages/especialidades/especialidades.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
-import { CompletarRegistroComponent } from './pages/completar-registro/completar-registro.component';
+
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -29,7 +29,6 @@ const routes: Routes = [
   { path: 'medicos', component: MedicosComponent },
   { path: 'especialidades', component: EspecialidadesComponent },
   { path: 'usuario', component: UsuarioComponent },
-  { path: 'completarRegistro', component: CompletarRegistroComponent },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 

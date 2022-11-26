@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ComoLlegarComponent } from 'src/app/components/como-llegar/como-llegar.component';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 declare var google:any;
 
@@ -15,7 +15,8 @@ export class LoginComponent implements  OnInit, AfterViewInit {
   formLogin : FormGroup;
 
   constructor(private fb: FormBuilder,
-              private route: Router) { }
+              private route: Router,
+              private alerta: MatSnackBar) { }
 
   ngAfterViewInit(): void {
     google.accounts.id.initialize({
@@ -53,7 +54,7 @@ export class LoginComponent implements  OnInit, AfterViewInit {
       if (correoToken == "yessica_piedrahita82181@elpoli.edu.co") {
         document.location.href = "/perfilAdmin";
       }else{
-        document.location.href = "/completarRegistro";
+        document.location.href = "/perfilUsuario";
       }
       
     }
@@ -71,14 +72,23 @@ export class LoginComponent implements  OnInit, AfterViewInit {
   }
 
   submit(){
+    //toastr.success('We do have the Kapua suite available.', 'Turtle Bay Resort', {timeOut: 5000})
     let valoresForm = this.formLogin.value;
+    
     console.log(valoresForm.usuario);
+    //this.alerta.open('ingreasste', 'cerrar', {duration: 2000});
     if (valoresForm.usuario == "yessica_piedrahita82181@elpoli.edu.co") {
+      this.openSnackBar('entraste como admin', 'cerrar');
       this.route.navigate(['perfilAdmin']);
     }else{
-      this.route.navigate(['completarRegistro']);
+      this.openSnackBar('entraste como usuario', 'cerrar');
+      this.route.navigate(['perfilUsuario']);
     }
     
+  }
+
+  openSnackBar(message: string, action: string) {
+    this.alerta.open(message, action);
   }
 
   registro(){

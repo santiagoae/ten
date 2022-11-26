@@ -14,7 +14,6 @@ import { TratamientosComponent } from './tratamientos/tratamientos.component';
 import { EspecialidadesComponent } from './especialidades/especialidades.component';
 import { MedicosComponent } from './medicos/medicos.component';
 import { UsuarioComponent } from './usuario/usuario.component';
-import { CompletarRegistroComponent } from './completar-registro/completar-registro.component';
 
 @NgModule({
   declarations: [
@@ -30,8 +29,7 @@ import { CompletarRegistroComponent } from './completar-registro/completar-regis
     EspecialidadesComponent,
     MedicosComponent,
     UsuarioComponent,
-    CompletarRegistroComponent,
-    
+   
   ],
   imports: [
     CommonModule,

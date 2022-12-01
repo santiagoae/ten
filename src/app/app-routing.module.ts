@@ -14,6 +14,8 @@ import { TratamientosComponent } from './pages/tratamientos/tratamientos.compone
 import { MedicosComponent } from './pages/medicos/medicos.component';
 import { EspecialidadesComponent } from './pages/especialidades/especialidades.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
+import { ContactenosComponent } from './components/contactenos/contactenos.component';
+import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
 
 
 const routes: Routes = [
@@ -29,6 +31,8 @@ const routes: Routes = [
   { path: 'medicos', component: MedicosComponent },
   { path: 'especialidades', component: EspecialidadesComponent },
   { path: 'usuario', component: UsuarioComponent },
+  { path: 'contactenos', component: ContactenosComponent },
+  { path: 'preguntas', component: PreguntasFrecuentesComponent },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 

@@ -9,12 +9,14 @@ import { PagesModule } from './pages/pages.module';
 import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
 import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
 import { HttpClientModule} from '@angular/common/http';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,        
+    AppComponent,
+     
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatSnackBarModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

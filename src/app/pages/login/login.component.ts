@@ -1,7 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import {MatSnackBar} from '@angular/material/snack-bar';
 
 declare var google:any;
 
@@ -16,7 +15,7 @@ export class LoginComponent implements  OnInit, AfterViewInit {
 
   constructor(private fb: FormBuilder,
               private route: Router,
-              private alerta: MatSnackBar) { }
+             ) { }
 
   ngAfterViewInit(): void {
     google.accounts.id.initialize({
@@ -78,18 +77,14 @@ export class LoginComponent implements  OnInit, AfterViewInit {
     console.log(valoresForm.usuario);
     //this.alerta.open('ingreasste', 'cerrar', {duration: 2000});
     if (valoresForm.usuario == "yessica_piedrahita82181@elpoli.edu.co") {
-      this.openSnackBar('entraste como admin', 'cerrar');
       this.route.navigate(['perfilAdmin']);
     }else{
-      this.openSnackBar('entraste como usuario', 'cerrar');
       this.route.navigate(['perfilUsuario']);
     }
     
   }
 
-  openSnackBar(message: string, action: string) {
-    this.alerta.open(message, action);
-  }
+ 
 
   registro(){
     this.route.navigate(['registrar']);

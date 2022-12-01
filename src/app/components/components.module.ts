@@ -8,6 +8,8 @@ import { AlianzasComponent } from './alianzas/alianzas.component';
 import { ComoLlegarComponent } from './como-llegar/como-llegar.component';
 import { FooterComponent } from './footer/footer.component';
 import { EspecialistasHistoriaComponent } from './especialistas-historia/especialistas-historia.component';
+import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-frecuentes.component';
+import { ContactenosComponent } from './contactenos/contactenos.component';
 
 
 
@@ -21,7 +23,8 @@ import { EspecialistasHistoriaComponent } from './especialistas-historia/especia
     AlianzasComponent, 
     ComoLlegarComponent, 
     FooterComponent, 
-    EspecialistasHistoriaComponent,
+    EspecialistasHistoriaComponent, PreguntasFrecuentesComponent, ContactenosComponent,
+
     
     ],
   imports: [
@@ -36,6 +39,7 @@ import { EspecialistasHistoriaComponent } from './especialistas-historia/especia
     ComoLlegarComponent,
     FooterComponent,
     EspecialistasHistoriaComponent,
+
        
   ]
 })

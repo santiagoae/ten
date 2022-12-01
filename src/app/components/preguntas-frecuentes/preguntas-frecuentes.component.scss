@@ -1,0 +1,45 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+    width: 75%
+}
+
+.categoria {
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-weight: 700;
+    color: #b8b8b8;
+    border: 2px solid transparent;
+    transition: .3s ease all;
+}
+
+.categoria:hover {
+    box-shadow: 0 0 13px 0 rgba(185,185,185, .25);
+    color: #000;
+}
+
+.categoria:hover path{
+    fill: #e23939;
+}
+
+.categoria svg{
+    width: 64px;
+    margin-bottom: 10px;
+}
+
+    .categoria.activa {
+        border: 2px solid var(#e23939)
+    }
+

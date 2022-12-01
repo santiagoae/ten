@@ -1,7 +1,11 @@
 .CardsContenedor{
-    width: 100%;        
+    width: 100%; 
+    height: 100%;       
 }
+.carousel{
+    min-height: 60vh;
 
+}
 
 @media (min-width: 520px) {
     

@@ -1,3 +1,8 @@
+.contenedorEspecialistas{
+    box-sizing: border-box;
+    padding: 5%;
+    margin-top: 20%;
+}
 #jaime{    
     min-height: 50vh;
     background-image: url('./../../../assets/Imagenes/JaimeOrtiz.jpeg');
@@ -63,4 +68,12 @@
 
 .contenedor{
     padding: 20px;
+}
+
+.infoEspecialista{
+    padding: 20px;
+}
+
+.contenedorEspecialistas{
+    margin-top: 10%;
 }

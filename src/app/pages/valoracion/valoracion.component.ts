@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-valoracion',
@@ -7,9 +9,68 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ValoracionComponent implements OnInit {
 
-  constructor() { }
+  valoracion: FormGroup;
+  odontoGeneral: number; 
+  ortodoncia: number; 
+  periodoncia: number; 
+  endodoncia: number; 
+  odontopediatria: number; 
+  ciruOral: number; 
+  rehabiOral: number; 
+  resultado: number; 
+
+  constructor(private fb:FormBuilder,
+              private alerts:NgToastService) { }
 
   ngOnInit(): void {
+    this.crearFormulario();
   }
 
+  crearFormulario(){
+    this.valoracion = this.fb.group({
+      odontoGeneral: ['', Validators.required],
+      ortodoncia: ['', Validators.required],
+      periodoncia: ['', Validators.required],
+      endodoncia: ['', Validators.required],
+      odontopediatria: ['', Validators.required],
+      ciruOral: ['', Validators.required],
+      rehabiOral: ['', Validators.required],
+    })
+  }
+
+  calcular(){
+    this.odontoGeneral = 0;
+    this.ortodoncia = 0;
+    this.periodoncia = 0;
+    this.endodoncia = 0;
+    this.ciruOral = 0;
+    this.rehabiOral = 0;
+    this.odontopediatria = 0;
+
+    if (this.valoracion.get('odontoGeneral')?.value) {
+      this.odontoGeneral = 60000;
+    }
+    if (this.valoracion.get('ortodoncia')?.value) {
+      this.ortodoncia = 1200000;
+    }
+    if (this.valoracion.get('periodoncia')?.value) {
+      this.periodoncia = 800000;
+    }
+    if (this.valoracion.get('endodoncia')?.value) {
+      this.endodoncia = 400000;
+    }
+    if (this.valoracion.get('odontopediatria')?.value) {
+      this.odontopediatria = 2000000;
+    }
+    if (this.valoracion.get('ciruOral')?.value) {
+      this.ciruOral = 3000000;
+    }
+    if (this.valoracion.get('rehabiOral')?.value) {
+      this.rehabiOral = 1000000;
+    }
+    this.resultado = this.odontoGeneral + this.ortodoncia + this.periodoncia + this.endodoncia + this.ciruOral + this.rehabiOral + this.odontopediatria
+    this.valoracion.reset();
+    this.alerts.info({detail: '$ ' + this.resultado.toString() + ' COP' ,summary:'Promedio de costo actual',sticky:true});
+    
+  }
 }

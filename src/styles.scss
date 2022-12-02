@@ -1,7 +1,11 @@
 body {
-  margin: 0 0;
-  padding: 24% 0 0 0;
-  width: 100%;
+  margin: 0;
+  padding:0;
+  overflow-x: hidden;
+}
+
+html{
+  overflow-x: hidden;
 }
 
 a {
@@ -73,11 +77,14 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   padding: 0 20px 0 20px;
   width: 100%;
 }
 
+
 #Carrusel.Secciones {
+  
   padding: 0;
 }
 #Servicios.Secciones {

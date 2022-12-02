@@ -9,6 +9,7 @@ import { PagesModule } from './pages/pages.module';
 import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
 import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
 import { HttpClientModule} from '@angular/common/http';
+import { NgToastModule } from 'ng-angular-popup'
 
 
 
@@ -27,6 +28,8 @@ import { HttpClientModule} from '@angular/common/http';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    NgToastModule
+  
     
   ],
   providers: [],

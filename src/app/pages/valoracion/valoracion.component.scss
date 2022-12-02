@@ -1,0 +1,25 @@
+.contenedorValoracion{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+.contenedorValoracion form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 30vh;
+    align-items: flex-start;
+    justify-content: center;
+}.contenedorValoracion form button{
+    margin: 0 auto;
+    margin-top: 5%;
+}.contenedorValoracion h1{
+    font-size: 25px;
+    text-align: center;
+}

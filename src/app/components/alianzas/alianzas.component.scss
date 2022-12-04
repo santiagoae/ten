@@ -1,15 +1,12 @@
-.logo1{          
-    width: 50%;    
-}
-.logo2{
-    width: 40%;    
+img{
+    width: 5rem;
 }
 .fondo{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 45%;
-    height: 6vh;
+    height: 10vh;
     background-color: rgb(109, 173, 149);
     border-radius: 10px; 
     text-align: center;   
@@ -19,21 +16,21 @@
     justify-content: space-between;
 }
 
-@media (min-width: 520px) {
-    .fondo{        
-        width: 40%;
-        height: 8vh;        
-    }
-    .logo1{          
-        width: 60%;    
-    }
-    .logo2{
-        width: 55%;    
-    }
-  }
-  @media (min-width: 800px) {
+// @media (min-width: 520px) {
+//     .fondo{        
+//         width: 40%;
+//         height: 8vh;        
+//     }
+//     .logo1{          
+//         width: 60%;    
+//     }
+//     .logo2{
+//         width: 55%;    
+//     }
+//   }
+//   @media (min-width: 800px) {
     
-  }
-  @media (min-width: 1200px) {
+//   }
+//   @media (min-width: 1200px) {
     
-  }
+//   }

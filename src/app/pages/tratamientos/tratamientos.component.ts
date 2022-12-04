@@ -1,8 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { CitasService } from '../../servicios/citas.service';
-import { MostrarBotonService } from '../../servicios/mostrar-boton.service';
+import { CitasService } from '../../services/citas.service';
+import { MostrarBotonService } from '../../services/mostrar-boton.service';
 import { AgendaService } from '../agenda/services/agenda.service';
 import { Cita } from '../modelo/cita';
 

@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
-import { UsuarioService } from './../../servicios/usuario.service';
+import { UsuarioService } from './../../services/usuario.service';
 import { Router } from '@angular/router';
 declare var google:any;
 

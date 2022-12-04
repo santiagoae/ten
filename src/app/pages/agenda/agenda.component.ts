@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Cita } from '../modelo/cita';
-import { CitasService } from '../../servicios/citas.service';
-import { DoctoresService } from '../../servicios/doctores.service';
-import { MostrarBotonService } from '../../servicios/mostrar-boton.service';
-import { ServiciosService } from '../../servicios/servicios.service';
+import { CitasService } from '../../services/citas.service';
+import { DoctoresService } from '../../services/doctores.service';
+import { MostrarBotonService } from '../../services/mostrar-boton.service';
+import { ServiciosService } from '../../services/servicios.service';
 import { AgendaService } from './services/agenda.service';
 
 import { Medico } from '../modelo/medico';

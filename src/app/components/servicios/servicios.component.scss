@@ -1,28 +1,47 @@
 .ServiciosContenedor {
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  padding: 40px;
+  display: grid;
+  gap: 2rem;
+  box-sizing: border-box;
+  padding: 2rem;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax( min(100%,24rem), 1fr));
+  place-items: center;   
   color: black;
+  width: 100vw;
 }
 
-
-.CardsContenedor{
-    width: 18rem;
-    margin-top: 20px;
+.felxCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: black;
 }
 
-@media (min-width: 520px) {
-    .CardsContenedor{
-        width: 20rem;        
-    }
-}
-@media (min-width: 800px) {
-    .CardsContenedor{
-        width: 25rem;        
-    }
-}
-@media (min-width: 1200px) {
-    
-}
+.CardsContenedor {
+  width: 20rem;
+  height: 28rem;
+}.CardsContenedor a {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+// sirve para cuando un elemento es mas grande que los otros ocupe 2 columnas
+// .featured {
+//     grid-column: span 2;
+// }
+
+// @media (min-width: 520px) {
+//   .CardsContenedor {
+//     width: 20rem;
+//   }
+// }
+// @media (min-width: 800px) {
+//   .CardsContenedor {
+//     width: 25rem;
+//   }
+// }
+// @media (min-width: 1200px) {
+// }

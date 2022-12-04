@@ -1,16 +1,18 @@
-.CardsContenedor{
-    width: 100%; 
-    height: 100%;       
+.flexCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.carousel{
-    min-height: 60vh;
+span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 12rem;
+}
 
-}
 
-@media (min-width: 520px) {
-    
-}
-@media (min-width: 800px) {
-}
-@media (min-width: 1200px) {
-}
+

@@ -61,6 +61,7 @@ ul {
   font-family: Raleway-Bold;
   // color: rgb(216, 217, 32); color limon
   color: rgb(167, 191, 48);
+  text-align: center;
 }
 .subtitulos {
   font-family: Raleway-Regular;
@@ -80,6 +81,7 @@ ul {
   box-sizing: border-box;
   padding: 0 20px 0 20px;
   width: 100%;
+  height: auto;
 }
 
 
@@ -113,9 +115,7 @@ ul {
   
 }
 @media (min-width: 800px) {
-  body {
-    padding: 10% 0 0 0;
-  }  
+   
   #Footer.Secciones {    
     align-items: center; 
         
@@ -133,7 +133,5 @@ ul {
 }
 
 @media (min-width: 1024px) {
-  body {
-    padding: 8% 0 0 0;
-  }  
+  
 }

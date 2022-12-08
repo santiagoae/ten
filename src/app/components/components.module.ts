@@ -10,6 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { EspecialistasHistoriaComponent } from './especialistas-historia/especialistas-historia.component';
 import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-frecuentes.component';
 import { ContactenosComponent } from './contactenos/contactenos.component';
+import { CitasCorreoComponent } from './citas-correo/citas-correo.component';
+import { AppModule } from '../app.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -23,12 +26,17 @@ import { ContactenosComponent } from './contactenos/contactenos.component';
     AlianzasComponent, 
     ComoLlegarComponent, 
     FooterComponent, 
-    EspecialistasHistoriaComponent, PreguntasFrecuentesComponent, ContactenosComponent,
+    EspecialistasHistoriaComponent, 
+    PreguntasFrecuentesComponent, 
+    ContactenosComponent, 
+    CitasCorreoComponent,
 
     
     ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule 
   ],
   exports: [
     NavBarComponent,
@@ -39,8 +47,7 @@ import { ContactenosComponent } from './contactenos/contactenos.component';
     ComoLlegarComponent,
     FooterComponent,
     EspecialistasHistoriaComponent,
-
-       
+    CitasCorreoComponent,
   ]
 })
 export class ComponentsModule { }

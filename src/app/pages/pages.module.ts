@@ -36,8 +36,6 @@ import { UsuarioComponent } from './usuario/usuario.component';
     ComponentsModule,
     FormsModule,
     ReactiveFormsModule,
-    
-
   ]
 })
 export class PagesModule { }

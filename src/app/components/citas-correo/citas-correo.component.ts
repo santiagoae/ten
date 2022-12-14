@@ -32,7 +32,7 @@ export class CitasCorreoComponent implements OnInit {
   }
 
   agendar(){
-    this.alerts.success({detail: 'Tu cita esta siendo evaluada', summary: 'Te responderemos a ' + this.citas.get('email')?.value, duration:4000});
+    this.alerts.success({detail: 'Tu cita esta siendo evaluada', summary: 'Te responderemos a ' + this.citas.get('email')?.value, duration:6000});
     console.log(this.citas.value)
     this.citas.reset();
   }

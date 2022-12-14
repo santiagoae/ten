@@ -1,64 +1,108 @@
 <div class="contenedorValoracion">
-        <h1 class="titulos"><i class="fa-solid fa-circle-check"></i> SELECCIONA TUS TRATAMIENTOS PARA DARTE UN ACERCAMIENTO AL PRECIO ACTUAL</h1>
-        <form [formGroup]="valoracion" (ngSubmit)="calcular()">
-            <div class="form-check">
-                <input class="form-check-input" formControlName="odontoGeneral" type="checkbox" value="12" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Odontologia General
-                </label>
-              </div>
+  <div class="contenido">
+    <h1 class="titulos">
+      <i class="fa-solid fa-circle-check"></i> SELECCIONA TUS TRATAMIENTOS PARA
+      DARTE UN ACERCAMIENTO AL PRECIO ACTUAL
+    </h1>
+    <form [formGroup]="valoracion" (ngSubmit)="calcular()">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          formControlName="odontoGeneral"
+          type="checkbox"
+          value="12"
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+          Odontologia General
+        </label>
+      </div>
 
-              <div class="form-check">
-                <input class="form-check-input" formControlName="ortodoncia" type="checkbox" value="10" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Ortodoncia
-                </label>
-              </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          formControlName="ortodoncia"
+          type="checkbox"
+          value="10"
+          id="flexCheckChecked"
+        />
+        <label class="form-check-label" for="flexCheckChecked">
+          Ortodoncia
+        </label>
+      </div>
 
-              <div class="form-check">
-                <input class="form-check-input" formControlName="periodoncia" type="checkbox" value="1" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Periodoncia
-                </label>
-              </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          formControlName="periodoncia"
+          type="checkbox"
+          value="1"
+          id="flexCheckChecked"
+        />
+        <label class="form-check-label" for="flexCheckChecked">
+          Periodoncia
+        </label>
+      </div>
 
-              <div class="form-check">
-                <input class="form-check-input" formControlName="endodoncia" type="checkbox" value="1" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Endodoncia
-                </label>
-              </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          formControlName="endodoncia"
+          type="checkbox"
+          value="1"
+          id="flexCheckChecked"
+        />
+        <label class="form-check-label" for="flexCheckChecked">
+          Endodoncia
+        </label>
+      </div>
 
-              <div class="form-check">
-                <input class="form-check-input" formControlName="odontopediatria" type="checkbox" value="1" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Odontopediatria
-                </label>
-              </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          formControlName="odontopediatria"
+          type="checkbox"
+          value="1"
+          id="flexCheckChecked"
+        />
+        <label class="form-check-label" for="flexCheckChecked">
+          Odontopediatria
+        </label>
+      </div>
 
-              <div class="form-check">
-                <input class="form-check-input" formControlName="ciruOral" type="checkbox" value="1" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Cirugia Oral
-                </label>
-              </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          formControlName="ciruOral"
+          type="checkbox"
+          value="1"
+          id="flexCheckChecked"
+        />
+        <label class="form-check-label" for="flexCheckChecked">
+          Cirugia Oral
+        </label>
+      </div>
 
-              <div class="form-check">
-                <input class="form-check-input" formControlName="rehabiOral" type="checkbox" value="1" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Rehabilitación Oral
-                </label>
-              </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          formControlName="rehabiOral"
+          type="checkbox"
+          value="1"
+          id="flexCheckChecked"
+        />
+        <label class="form-check-label" for="flexCheckChecked">
+          Rehabilitación Oral
+        </label>
+      </div>
 
-              <button type="submit" class="btn btn-secondary">Cotizar</button>
-              
-        </form>
-    
+      <button type="submit" class="btn btn-secondary">Cotizar</button>
+    </form>
+  </div>
 </div>
 
 <app-citas-correo class="contenedorCitas"></app-citas-correo>
 
 <section id="Footer" class="Secciones">
-    <app-footer></app-footer>
+  <app-footer></app-footer>
 </section>
-

@@ -14,7 +14,7 @@
             <option value="cirugia_oral">Cirugía Oral</option>
             <option value="rehabilitacion_oral">Rehabilitacion Oral</option>
         </select>
-        <input type="text" class="form-control" formControlName="fecha_tentativa" min="{{fechaActual}}" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Selecciona una fecha tentativa">
+        <input type="text" class="form-control" formControlName="tentative_date" min="{{fechaActual}}" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Selecciona una fecha tentativa">
         <button type="submit" class="btn btn-secondary" [disabled]="citas.invalid">Agendar</button>
     </form> 
 </div>

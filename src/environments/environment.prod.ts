@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  api: 'http://tensaludoral.com'
+  api: 'https://tensaludoral.com/ten/BackTen'
 };

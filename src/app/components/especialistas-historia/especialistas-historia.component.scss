@@ -1,68 +1,67 @@
 .contenedorEspecialistas{
     box-sizing: border-box;
 }
-#jaime{    
-    min-height: 50vh;
+#jaime{   
+    min-height: 80vh;
     background-image: url('./../../../assets/Imagenes/JaimeOrtiz.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
-    height: auto;
-    width: auto;
+    background-size: cover;
+    
 }
 #gustavo{    
-    min-height: 50vh;
+    min-height: 80vh;
     background-image: url("./../../../assets/Imagenes/guatavo\ cirujano.jpeg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
-    height: auto;
-    width: auto;
+    background-size: cover;
 }
 
 #anny{    
-    min-height: 50vh;
+    min-height: 80vh;
     background-image: url('./../../../assets/Imagenes/ani\ periodoncista.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
-    height: auto;
-    width: auto;
+    background-size: cover;
 }
 
 #Jeovanny{    
-    min-height: 50vh;
+    min-height: 80vh;
     background-image: url('./../../../assets/Imagenes/ubier.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
-    height: auto;
-    width: auto;
+    background-size: cover;
 }
 #diego{    
-    min-height: 50vh;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRfeXWb-4Ch341vHRB0gPy6MXFAUWTTXXUww&usqp=CAU");
+    min-height: 80vh;
+    background-image: url("./../../../assets/Imagenes/diego.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 #ivonne{    
-    min-height: 50vh;
+    min-height: 80vh;
     background-image: url('./../../../assets/Imagenes/Ivone.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-size: contain;
-    height: auto;
-    width: auto;
 }
 #aura{    
-    min-height: 50vh;
+    min-height: 80vh;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRfeXWb-4Ch341vHRB0gPy6MXFAUWTTXXUww&usqp=CAU");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
+
+#Jaime_Arbelaez{    
+    min-height: 80vh;
+    background-image: url("/assets/Imagenes/jaime_alberto.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 
 .contenedor{
     padding: 20px;

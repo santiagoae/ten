@@ -1,10 +1,5 @@
 <div class="contenedorCitasCorreo">
     <h1 class="titulos"><i class="fa-solid fa-calendar-check"></i> Agenda tu Cita</h1>
-    <form action="https://formspree.io/f/xoqzavlg" method="post">
-        <input type="text" name="name" required>
-        <input type="email" name="email" required>
-        <button type="submit">Send</button>
-   </form>
     <!-- <form action="https://formsubmit.co/el/wehoto" method="POST"> -->
         <!-- <input type="text" class="form-control" name="name" placeholder="Nombre Completo"> -->
         <!-- <input type="email" class="form-control" name="email" placeholder="Correo Electronico"> -->
@@ -23,7 +18,7 @@
         <!-- <button type="submit" class="btn btn-secondary" [disabled]="citas.invalid">Agendar</button> -->
         <!-- <button type="submit" class="btn btn-secondary" >Agendar</button>
     </form>  -->
-    <!-- <form [formGroup]="citas" (ngSubmit)="agendar()">
+    <form [formGroup]="citas" (ngSubmit)="agendar()">
         <input type="text" class="form-control" formControlName="name" placeholder="Nombre Completo">
         <input type="email" class="form-control" formControlName="email" placeholder="Correo Electronico">
         <input type="number" class="form-control" formControlName="phone" placeholder="Celular">
@@ -39,5 +34,5 @@
         </select>
         <input type="text" class="form-control" formControlName="tentative_date" min="{{fechaActual}}" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Selecciona una fecha tentativa">
         <button type="submit" class="btn btn-secondary" [disabled]="citas.invalid">Agendar</button>
-    </form>  -->
+    </form> 
 </div>

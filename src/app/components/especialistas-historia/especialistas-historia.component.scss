@@ -1,67 +1,38 @@
 .contenedorEspecialistas{
     box-sizing: border-box;
 }
-#jaime{   
+section{
     min-height: 80vh;
-    background-image: url('./../../../assets/Imagenes/JaimeOrtiz.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    
 }
-#gustavo{    
-    min-height: 80vh;
+#jaime{   
+    background-image: url('./../../../assets/Imagenes/JaimeOrtiz.jpeg');
+}
+#gustavo{ 
     background-image: url("./../../../assets/Imagenes/guatavo\ cirujano.jpeg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 
 #anny{    
-    min-height: 80vh;
     background-image: url('./../../../assets/Imagenes/ani\ periodoncista.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 
 #Jeovanny{    
-    min-height: 80vh;
     background-image: url('./../../../assets/Imagenes/ubier.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 #diego{    
-    min-height: 80vh;
     background-image: url("./../../../assets/Imagenes/diego.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 #ivonne{    
-    min-height: 80vh;
     background-image: url('./../../../assets/Imagenes/Ivone.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 #aura{    
-    min-height: 80vh;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRfeXWb-4Ch341vHRB0gPy6MXFAUWTTXXUww&usqp=CAU");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
-
 #Jaime_Arbelaez{    
-    min-height: 80vh;
     background-image: url("/assets/Imagenes/jaime_alberto.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
-
 
 .contenedor{
     padding: 20px;
@@ -71,3 +42,83 @@
     padding: 20px;
 }
 
+
+@media (min-width: 768px) {
+    section{
+        background-position: center 0.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .headerJaime{
+        position: relative;
+    }
+    .headerGustavo{
+        position: relative;
+    }
+    .headerAni{
+        position: relative;
+    }
+    .headerJeovannny{
+        position: relative;
+    }
+    .headerDiego{
+        position: relative;
+    }
+    .headerIvonne{
+        position: relative;
+    }
+    .headerJaimeArbelaez{
+        position: relative;
+    }
+    .infoEspecialista{
+        position: absolute;
+        top: 20rem;
+        right: 5rem;
+    }
+    #jaime{   
+        background-image: url('/assets/fondosEspecialistas/jaimeOrtiz.jpg');
+    }
+    #gustavo{ 
+        background-image: url("./../../../assets/fondosEspecialistas/gustavo.jpg");
+    }
+    
+    #anny{    
+        background-image: url('./../../../assets/fondosEspecialistas/ani.jpg');
+    }
+    
+    #Jeovanny{    
+        background-image: url('./../../../assets/fondosEspecialistas/ubier.jpg');
+    }
+    #diego{    
+        background-image: url("./../../../assets/fondosEspecialistas/diego.jpg");
+    }
+    #ivonne{    
+        background-image: url('./../../../assets/fondosEspecialistas/ivone.jpg');
+    }
+    #aura{    
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRfeXWb-4Ch341vHRB0gPy6MXFAUWTTXXUww&usqp=CAU");
+    }
+    #Jaime_Arbelaez{    
+        background-image: url("./../../../assets/fondosEspecialistas/jaimeAlberto.jpg");
+    }
+}
+  
+@media (min-width: 1200px) {
+    section#jaime{
+        background-position: center 0.1rem;
+        min-height: 90vh;
+    }
+    section{
+        background-position: center center;
+        min-height: 90vh;
+    }
+    .infoEspecialista{
+        top: 24rem;
+        right: 11rem;
+    }
+    h1, h5 {
+        font-size: 2.6rem;
+    }
+}

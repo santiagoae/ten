@@ -8,8 +8,7 @@ import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
 import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
 import { HttpClientModule} from '@angular/common/http';
-import { NgToastModule } from 'ng-angular-popup'
-
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 
@@ -25,8 +24,7 @@ import { NgToastModule } from 'ng-angular-popup'
     ComponentsModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    NgToastModule
-  
+    SlickCarouselModule,
     
   ],
   providers: [],

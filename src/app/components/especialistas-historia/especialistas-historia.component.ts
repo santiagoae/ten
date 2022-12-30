@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-especialistas-historia',
   templateUrl: './especialistas-historia.component.html',
@@ -11,5 +10,6 @@ export class EspecialistasHistoriaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }

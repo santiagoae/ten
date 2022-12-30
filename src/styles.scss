@@ -90,9 +90,6 @@ ul {
   height: auto;
 }
 
-
-#Carrusel.Secciones {
-}
 #Servicios.Secciones {
   background-image: url("./assets/Fondos/fondo2_Mesa\ de\ trabajo\ 1.jpg");
   background-repeat: repeat-y;
@@ -100,6 +97,7 @@ ul {
 
 #Especialistas.Secciones {
   padding: 20px;
+  display:contents;
   background-image: url("./assets/Fondos/fondo1-01.jpg");
 }
 #Alianzas.Secciones {

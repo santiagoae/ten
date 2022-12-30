@@ -11,8 +11,8 @@ import { EspecialistasHistoriaComponent } from './especialistas-historia/especia
 import { PreguntasFrecuentesComponent } from './preguntas-frecuentes/preguntas-frecuentes.component';
 import { ContactenosComponent } from './contactenos/contactenos.component';
 import { CitasCorreoComponent } from './citas-correo/citas-correo.component';
-import { AppModule } from '../app.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 
@@ -30,13 +30,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PreguntasFrecuentesComponent, 
     ContactenosComponent, 
     CitasCorreoComponent,
-
+    
     
     ],
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    SlickCarouselModule 
   ],
   exports: [
     NavBarComponent,

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-valoracion',
@@ -19,8 +18,7 @@ export class ValoracionComponent implements OnInit {
   rehabiOral: number; 
   resultado: number; 
 
-  constructor(private fb:FormBuilder,
-              private alerts:NgToastService) { }
+  constructor(private fb:FormBuilder,) { }
 
   ngOnInit(): void {
     this.crearFormulario();
@@ -70,7 +68,6 @@ export class ValoracionComponent implements OnInit {
     }
     this.resultado = this.odontoGeneral + this.ortodoncia + this.periodoncia + this.endodoncia + this.ciruOral + this.rehabiOral + this.odontopediatria
     this.valoracion.reset();
-    this.alerts.info({detail: '$ ' + this.resultado.toString() + ' COP' ,summary:'Promedio de costo actual',sticky:true});
-    
+    alert('$ ' + this.resultado.toString() + ' COP');
   }
 }

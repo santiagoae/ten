@@ -1,23 +1,5 @@
 <div class="contenedorCitasCorreo">
     <h1 class="titulos"><i class="fa-solid fa-calendar-check"></i> Agenda tu Cita</h1>
-    <!-- <form action="https://formsubmit.co/el/wehoto" method="POST"> -->
-        <!-- <input type="text" class="form-control" name="name" placeholder="Nombre Completo"> -->
-        <!-- <input type="email" class="form-control" name="email" placeholder="Correo Electronico"> -->
-        <!-- <input type="number" class="form-control" name="phone" placeholder="Celular"> -->
-        <!-- <select name="service" class="form-select"> -->
-            <!-- <option value="" hidden>Cual es el servicio por el que vas a consultar</option> -->
-            <!-- <option value="odontologia_general">Odontología General y Estética</option> -->
-            <!-- <option value="ortodoncia">Ortodoncia</option> -->
-            <!-- <option value="periodoncia">Periodoncia</option> -->
-            <!-- <option value="endodoncia">Endodoncia</option> -->
-            <!-- <option value="odontopediatria">Odontopediatría</option> -->
-            <!-- <option value="cirugia_oral">Cirugía Oral</option> -->
-            <!-- <option value="rehabilitacion_oral">Rehabilitacion Oral</option> -->
-        <!-- </select> -->
-        <!-- <input type="text" class="form-control" name="tentative_date" min="{{fechaActual}}" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Selecciona una fecha tentativa"> -->
-        <!-- <button type="submit" class="btn btn-secondary" [disabled]="citas.invalid">Agendar</button> -->
-        <!-- <button type="submit" class="btn btn-secondary" >Agendar</button>
-    </form>  -->
     <form [formGroup]="citas" (ngSubmit)="agendar()">
         <input type="text" class="form-control" formControlName="name" placeholder="Nombre Completo">
         <input type="email" class="form-control" formControlName="email" placeholder="Correo Electronico">

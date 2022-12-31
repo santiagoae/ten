@@ -13,6 +13,7 @@ import { ContactenosComponent } from './contactenos/contactenos.component';
 import { CitasCorreoComponent } from './citas-correo/citas-correo.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { EnvioCorreoComponent } from './envio-correo/envio-correo.component';
 
 
 
@@ -29,7 +30,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     EspecialistasHistoriaComponent, 
     PreguntasFrecuentesComponent, 
     ContactenosComponent, 
-    CitasCorreoComponent,
+    CitasCorreoComponent, 
+    EnvioCorreoComponent,
     
     
     ],
@@ -49,6 +51,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     FooterComponent,
     EspecialistasHistoriaComponent,
     CitasCorreoComponent,
+    EnvioCorreoComponent,
   ]
 })
 export class ComponentsModule { }

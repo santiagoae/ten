@@ -40,7 +40,8 @@ export class CitasCorreoComponent implements OnInit {
   agendar(){
     this.correoSvc.agendarCita(this.citas.value).subscribe({
       next: res => {
-        alert(res.response)        
+        alert(res.response)
+        window.location.reload();        
       },
       error: err => {
         alert(err.error)

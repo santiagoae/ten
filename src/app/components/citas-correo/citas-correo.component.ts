@@ -30,8 +30,8 @@ export class CitasCorreoComponent implements OnInit {
   crearFormulario(){
     this.citas = this.fb.group({
       name: ['', Validators.required],
-      email: ['', Validators.required],
-      phone: ['', Validators.required],
+      email: ['', [Validators.required, Validators.pattern(/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/)]],
+      phone: ['', [Validators.required, Validators.pattern("[0-9]{7,10}")]],
       service: ['', Validators.required],
       tentative_date: ['', Validators.required],
     })
@@ -40,7 +40,8 @@ export class CitasCorreoComponent implements OnInit {
   agendar(){
     this.correoSvc.agendarCita(this.citas.value).subscribe({
       next: res => {
-        alert(res.response)
+        alert(res.response);
+        this.citas.reset();
         window.location.reload();        
       },
       error: err => {
@@ -48,21 +49,5 @@ export class CitasCorreoComponent implements OnInit {
       }
     })
   }
-
-  // agendar() {
-  //     this. correoModel = this.citas.value;
-  //     console.log(this.correoModel);
-  //     Email.send({
-  //     Host : 'smtp.elasticemail.com',
-  //     Username : 'kawadsign@gmail.com',
-  //     Password : '94EC21B627E0E5E351B5CE08477B3774A639',
-  //     To : 'citas@tensaludoral.com',
-  //     From : `kawadsign@gmail.com`,
-  //     Subject : this.correoModel.service,
-  //     Body : `
-  //     <br/> <b>Name: </b>${this.correoModel.name} <br /> <b>Email: </b>${this.correoModel.email}<br /> <b>Phone: </b>${this.correoModel.phone}<br /> <b>Subject: </b>${this.correoModel.service}<br /> <b>Tentative_Date:</b> <br /> ${this.correoModel.tentative_date} <br><br> <b>~End of Message.~</b> `
-  //     }).then( message => {alert(message); this.citas.reset(); } );
-  //   }
-
 
 }

@@ -54,8 +54,10 @@ span:hover {
 
 @media (min-width: 1200px) {
     .CardsContenedor {
-        width: 64%;
-        margin-right: 0;
+        width: 60%;
+        display: flex;
+        margin: 0 auto;
+        // margin-right: 0;
     }
     span {
         font-size: 3rem;

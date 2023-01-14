@@ -13,24 +13,20 @@
       <p class="parrafos">{{slide?.especiality}}</p>
       <button class="btn btn-success">Conocer</button> -->
       <div class="card d-block CardsContenedor">
-          <img
-            [src]="slide?.img"
-            class="card-img-top"
-            alt="img"
-          />
-        
+        <img [src]="slide?.img" class="card-img-top" alt="img" />
+
         <div class="card-body">
           <h5 class="card-title titulos" style="text-align: center">
-            {{slide?.description}}
+            {{ slide?.description }}
           </h5>
-          <p class="card-text parrafos">{{slide?.especiality}}</p>
+          <p class="card-text parrafos">{{ slide?.especiality }}</p>
         </div>
-        <a class="btn btn-success mb-3" href="{{slide?.linkButton}}">Conocer</a>
+        <a class="btn btn-success mb-3" href="{{ slide?.linkButton }}"
+          >Conocer</a
+        >
       </div>
     </div>
   </ngx-slick-carousel>
-  <span><i class="fa-solid fa-circle-left" (click)="prevImg()"></i></span>  
+  <span><i class="fa-solid fa-circle-left" (click)="prevImg()"></i></span>
   <span><i class="fa-solid fa-circle-right" (click)="nextImg()"></i></span>
 </div>
-
-

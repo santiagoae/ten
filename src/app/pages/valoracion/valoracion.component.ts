@@ -46,25 +46,25 @@ export class ValoracionComponent implements OnInit {
     this.odontopediatria = 0;
 
     if (this.valoracion.get('odontoGeneral')?.value) {
-      this.odontoGeneral = 60000;
+      this.odontoGeneral = 25000;
     }
     if (this.valoracion.get('ortodoncia')?.value) {
-      this.ortodoncia = 1200000;
+      this.ortodoncia = 25000;
     }
     if (this.valoracion.get('periodoncia')?.value) {
-      this.periodoncia = 800000;
+      this.periodoncia = 40000;
     }
     if (this.valoracion.get('endodoncia')?.value) {
-      this.endodoncia = 400000;
+      this.endodoncia = 40000;
     }
     if (this.valoracion.get('odontopediatria')?.value) {
-      this.odontopediatria = 2000000;
+      this.odontopediatria = 30000;
     }
     if (this.valoracion.get('ciruOral')?.value) {
-      this.ciruOral = 3000000;
+      this.ciruOral = 40000;
     }
     if (this.valoracion.get('rehabiOral')?.value) {
-      this.rehabiOral = 1000000;
+      this.rehabiOral = 40000;
     }
     this.resultado = this.odontoGeneral + this.ortodoncia + this.periodoncia + this.endodoncia + this.ciruOral + this.rehabiOral + this.odontopediatria
     this.valoracion.reset();

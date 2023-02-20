@@ -36,6 +36,13 @@ section{
 #Jaime_Arbelaez{    
     background-image: url("/assets/Imagenes/jaime_alberto.jpg");
 }
+#Aura_Llano{    
+    background-image: url("/assets/Imagenes/jaime_alberto.jpg");
+}
+#Ana_Zuluaga{    
+    background-image: url("/assets/Imagenes/jaime_alberto.jpg");
+}
+
 
 .contenedor{
     padding: 20px;
@@ -73,6 +80,12 @@ section{
         position: relative;
     }
     .headerJaimeArbelaez{
+        position: relative;
+    }
+    .headerAuraLlano{
+        position: relative;
+    }
+    .headerAnaZuluaga{
         position: relative;
     }
     .infoEspecialista{
@@ -122,8 +135,8 @@ section{
         min-height: 90vh;
     }
     .infoEspecialista{
-        top: 23rem;
-        right: 11rem;
+        top: 20rem;
+        right: 10rem;
     }
     h1, h5 {
         font-size: 2.3rem;

@@ -23,6 +23,8 @@ export class EspecialistasComponent implements OnInit {
     {img: "assets/Imagenes/diego.jpg", description: "Diego Alejandro Arbeláez", especiality: "Odontología integral y Ortodoncia", linkButton: "/especialistas#diego"},
     {img: "assets/Imagenes/Ivone.jpeg", description: "Ivonne Daniela Chacon Tobar", especiality: "Odontóloga general", linkButton: "/especialistas#ivonne"},
     {img: "assets/Imagenes/jaime_alberto.jpg", description: "Jaime Alberto Arbelaez", especiality: "Odontólogo general y Endodoncista", linkButton: "/especialistas#Jaime_Arbelaez"},
+    {img: "assets/Imagenes/ana_cecilia.jpg", description: "Ana Cecilia Zuluaga", especiality: "Odontóloga General", linkButton: "/especialistas#Ana_Zuluaga"},
+    {img: "assets/Imagenes/aura.jpg", description: "Aura Catalina Llano", especiality: "Odontóloga", linkButton: "/especialistas#Aura_Llano"},
   ];
   slideConfig = {
     slidesToShow:2, 
